@@ -17,7 +17,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage })
 
-router.post("/", upload.array("files", 5), uploadeFIle);
+router.post("/", upload.array("files", 50), uploadeFIle);
 router.get("/", getFileCount)
 module.exports = router;
 
